@@ -35,7 +35,7 @@ const Navbar = (props)=>{
                 </div>
                 <div className="form-check form-switch">
                     {/* <input className="form-check-input" onClick={props.ToggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/> */}
-                    <button className={`form-check-label`} onClick={props.ToggleMode} htmlFor="flexSwitchCheckDefault">🌓</button>
+                    <button type='button' className='btn' onClick={props.ToggleMode} htmlFor="flexSwitchCheckDefault">🌓</button>
                 </div>
             </div>
         </nav>

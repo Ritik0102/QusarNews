@@ -4,7 +4,7 @@ const NewsItem=(props) => {
     let{title, description, imgUrl, newsUrl, author, date, source} = props;
     return (
       <div>
-        <div className="card mx-2">
+        <div id='card' className="card mx-2">
         <span className="badge bg-primary" style={{display:"flex", justifyContent: "flex-end", position:"absolute", right:0}}>
           {source}
         </span>

@@ -10,19 +10,17 @@ import {
 import { useState } from 'react';
 
 const App = () => {
+  const [mode, setMode] = useState("light");
   const ToggleMode = () =>{
     if(mode === "light"){
       setMode("dark");
       document.body.style.backgroundColor="#121224"
-      document.title = 'QusarNews - Dark Mode';
 
     } else{
       setMode("light");
       document.body.style.backgroundColor="White"
-      document.title = 'QusarNews - Light Mode';
     }
     }
-    const [mode, setMode] = useState("light");
     return (
       <div>
         <Router>
