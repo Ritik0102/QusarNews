@@ -3,7 +3,6 @@ import React from 'react'
 import Navbar from './Components/Navbar';
 import News from './Components/News';
 import {
-  BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
@@ -23,7 +22,6 @@ const App = () => {
     }
     return (
       <div>
-        <Router>
         <Navbar mode={mode} ToggleMode={ToggleMode}/>
           <Routes>
             <Route exact path="/" element = {<News mode = {mode} key="general" category="general"/>}/>
@@ -34,7 +32,6 @@ const App = () => {
             <Route exact path="/sports"  element = {<News mode = {mode} key="sports" category="sports"/>}/>         
             <Route exact path="/technology" element = {<News mode = {mode} key="technology" category="technology"/>}/>    
           </Routes>
-        </Router>
       </div>
     )
 }
