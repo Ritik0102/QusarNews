@@ -21,6 +21,7 @@ const App = () => {
     }
     }
     return (
+      <>
       <div>
         <Navbar mode={mode} ToggleMode={ToggleMode}/>
           <Routes>
@@ -33,6 +34,7 @@ const App = () => {
             <Route exact path="/technology" element = {<News mode = {mode} key="technology" category="technology"/>}/>    
           </Routes>
       </div>
+      </>
     )
 }
 
